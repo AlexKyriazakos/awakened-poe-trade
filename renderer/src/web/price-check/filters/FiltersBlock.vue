@@ -39,6 +39,8 @@
         :filter="filters.mirrored" :text="t(filters.mirrored.disabled ? 'item.not_mirrored' : 'item.mirrored')" />
       <filter-btn-logical v-if="filters.split && !filters.split.hidden" active
         :filter="filters.split" :text="t(filters.split.disabled ? 'item.not_split' : 'item.split')" />
+      <filter-btn-logical v-if="filters.notCatalysed"
+        :filter="filters.notCatalysed" :text="t('item.not_catalysed')" />
       <filter-btn-logical v-if="hasStats"
         :collapse="statsVisibility.disabled"
         :filter="statsVisibility"
